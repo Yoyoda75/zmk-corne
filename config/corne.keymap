@@ -9,6 +9,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        df_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <15 16>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
