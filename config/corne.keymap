@@ -19,6 +19,17 @@
         };
     };
 
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-sticky-key";
+            label = "NEW_BEHAVIOR";
+            bindings = <&none>;
+            #binding-cells = <1>;
+            release-after-ms = <1500>;
+            quick-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
